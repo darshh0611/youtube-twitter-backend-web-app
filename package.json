@@ -2,10 +2,14 @@
   "name": "youtube-twitter-backend-app",
   "version": "1.0.0",
   "description": "A backend for a web-app consisting of a mixture of youtube and twitter. ",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "author": "Darsh Shah",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
 }
