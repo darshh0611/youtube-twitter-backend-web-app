@@ -2,11 +2,10 @@
 
 import mongoose from "mongoose";
 
+import app from "./app.js";
 import connectDB from "./db/db.js";
 import dotenv from 'dotenv';
 dotenv.config();
-
-
 
 connectDB()
 .then(() => {
