@@ -17,7 +17,8 @@ import fs from "fs";
                 resource_type : 'auto'
             })
 
-            console.log("File is uploaded on cloudinary", response.url)
+            //console.log("File is uploaded on cloudinary", response.url)
+            fs.unlinkSync(localFilePath);
             return response;
 
         } catch (error) {
@@ -28,14 +29,5 @@ import fs from "fs";
 
     export {uploadOnCloudinary};
 
-
-
-
-     // Upload an image
-     const uploadResult = await cloudinary.uploader.upload("https://res.cloudinary.com/demo/image/upload/getting-started/shoes.jpg", {
-        public_id: "shoes"
-    }).catch((error)=>{console.log(error)});
-    
-    console.log(uploadResult);
     
    
